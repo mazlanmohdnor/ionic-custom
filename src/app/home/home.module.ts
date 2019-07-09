@@ -1,23 +1,27 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
+import { DeviceFeedback } from '@ionic-native/device-feedback/ngx';
+import { IonicModule } from '@ionic/angular';
+import { MCardComponent } from 'app/components/m-card/m-card.component';
+import { MHeaderComponent } from 'app/components/m-header/m-header.component';
 import { HomePage } from './home.page';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: HomePage
-      }
-    ])
-  ],
-  declarations: [HomePage]
+    imports: [
+        FormsModule,
+        CommonModule,
+        IonicModule,
+        // LanModule.forRoot(),
+        RouterModule.forChild([
+            {
+                path: '',
+                component: HomePage
+            }
+        ])
+    ],
+    declarations: [HomePage, MCardComponent, MHeaderComponent],
+    providers: [DeviceFeedback]
 })
 export class HomePageModule {}

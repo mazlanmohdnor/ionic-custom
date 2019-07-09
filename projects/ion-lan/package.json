@@ -1,0 +1,24 @@
+{
+  "name": "ion-lan",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@ionic-native/device-feedback": "^5.9.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^7.2.2",
+    "@angular/compiler": "~7.2.2",
+    "@angular/compiler-cli": "~7.2.2",
+    "@angular/core": "^7.2.2",
+    "@angular/forms": "^7.2.2",
+    "@angular/platform-browser": "^7.2.2",
+    "@angular/platform-browser-dynamic": "^7.2.2",
+    "@types/node": "~12.0.0",
+    "@ionic/angular": "^4.1.0",
+    "rxjs": "~6.5.1",
+    "typescript": "~3.1.6",
+    "zone.js": "~0.8.29",
+    "@ionic/core": "4.6.0",
+    "@angular/router": "^7.2.2",
+    "@ionic-native/core": "^5.0.0"
+  }
+}
