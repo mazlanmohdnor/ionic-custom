@@ -1,18 +1,25 @@
-.m-content {
-  background-color: #F0F5FB;
-}
-
 .container {
-  padding: 35px 25px 25px;
+  padding: 40px 25px 80px 25px;
 }
 
 .m-title {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 38px;
   text-align: left;
-  margin-top: 10px;
+  color: #444;
 }
 
 .m-sub-title {
   margin-top: 5px;
+}
+
+.avatar-container {
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
 }

@@ -1,4 +1,21 @@
 
 ion-content {
-  --ion-background-color: #F0F5FB;
+  //--ion-background-color: #F0F5FB;
 }
+
+.search {
+  margin: 0px 16px 10px;
+}
+
+ion-searchbar {
+  padding: 0;
+}
+
+
+.searchbar-input-container .sc-ion-searchbar-ios {
+  height: 50px !important;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+}
+
+

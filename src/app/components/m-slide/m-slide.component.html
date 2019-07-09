@@ -1,0 +1,9 @@
+<div class="container">
+    <div>
+        <div class="scroll" scrollX="true">
+            <div *ngFor="let item of objList" class="m-slide">
+                <lan-card [img]="item.img" [title]="item.title" width="100px"></lan-card>
+            </div>
+        </div>
+    </div>
+</div>

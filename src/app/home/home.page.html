@@ -6,19 +6,20 @@
 
 
 <ion-content>
-    <ion-virtual-scroll [items]="testList">
-        <div *virtualItem="let item">
-            <!--            <ion-grid >-->
-            <!--                <ion-row>-->
-            <!--                    <ion-col  size="6">-->
-            <lan-card [img]="item.image" [title]="item.title"></lan-card>
-            <!--                    </ion-col>-->
-            <!--                </ion-row>-->
-            <!--            </ion-grid>-->
+    <div class="search">
+        <ion-searchbar mode="ios" placeholder="What do you need to have done?"></ion-searchbar>
+    </div>
 
-        </div>
+    <app-m-subheader subTitle="See More" title="Tasks"></app-m-subheader>
+    <app-m-slide></app-m-slide>
+    <app-m-subheader subTitle="See More" title="Categories"></app-m-subheader>
 
+    <ion-grid>
+        <ion-row>
+            <ion-col *ngFor="let item of objList" size="6">
+                <lan-card [img]="item.img" [title]="item.title"></lan-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 
-    </ion-virtual-scroll>
 </ion-content>
-

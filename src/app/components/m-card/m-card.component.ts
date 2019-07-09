@@ -11,6 +11,7 @@ export class MCardComponent implements OnInit {
     @Input('img') img: string;
     @Input('title') title: string;
     @Input('subTitle') subTitle: string;
+    @Input('width') width: string;
     @Output('tap') tap: EventEmitter<any> = new EventEmitter<any>();
     
     constructor(
