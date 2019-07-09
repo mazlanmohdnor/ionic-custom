@@ -1,0 +1,22 @@
+<ion-header no-border no-shadow>
+  <ion-toolbar>
+    <lan-header></lan-header>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <app-m-subheader subTitle="See More" title="Activities"></app-m-subheader>
+  <app-m-slide></app-m-slide>
+  <app-m-subheader subTitle="See More" title="Categories"></app-m-subheader>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of objList" size="6">
+        <lan-card [img]="item.img" [title]="item.title"></lan-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
